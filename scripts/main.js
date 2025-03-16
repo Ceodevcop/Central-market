@@ -16,3 +16,8 @@ document.getElementById("verifyForm").addEventListener("submit", function (e) {
     <p><strong>Pieces Owned:</strong> ${accountDetails.piecesOwned.join(", ")}</p>
   `;
 });
+// Toggle side menu
+document.getElementById("toggleMenu").addEventListener("click", function () {
+  const sideMenu = document.getElementById("sideMenu");
+  sideMenu.classList.toggle("active");
+});
