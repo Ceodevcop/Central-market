@@ -17,7 +17,9 @@ document.getElementById("verifyForm").addEventListener("submit", function (e) {
   `;
 });
 // Toggle side menu
+console.log("Script loaded!");
 document.getElementById("toggleMenu").addEventListener("click", function () {
+  console.log("Toggle button clicked!");
   const sideMenu = document.getElementById("sideMenu");
   sideMenu.classList.toggle("active");
 });
