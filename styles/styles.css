@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  background-color:lavender;
 }
 
 .side-menu {
@@ -11,6 +12,7 @@ body {
   padding: 20px;
   height: 100vh;
   transition: transform 0.3s ease;
+  position: fixed;
 }
 
 .side-menu a {
@@ -23,6 +25,7 @@ body {
 .content {
   flex: 1;
   padding: 20px;
+  margin-left: 200px;
 }
 
 #toggleMenu {
@@ -36,7 +39,6 @@ body {
 
 @media (max-width: 768px) {
   .side-menu {
-    position: fixed;
     transform: translateX(-100%);
   }
   .side-menu.active {
@@ -45,11 +47,7 @@ body {
   #toggleMenu {
     display: block;
   }
-}
-
-.marketplace-item {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
+  .content {
+    margin-left: 0;
+  }
 }
